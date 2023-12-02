@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body>
+        <div id="speedModal" class="modal" hidden>
+            <div class="modalContent">
+            <span id="closeSpeedSpn" class="close">&times;</span>
+            <h2>Select your preferred speed:</h2>
+            <button id="slowBtn" class="speedOption">Slow</button>
+            <button id="mediumBtn" class="speedOption">Medium</button>
+            <button id="fastBtn" class="speedOption">Fast</button>
+            </div>
+        </div>
+
+        <div id="instructionsModal" class="modal" hidden>
+            <div class="modalContent">
+                <span id="closeInstructionsSpn" class="close">&times;</span>
+                        <h2 id="instructionsHeader">Instructions:</h2>
+                <ul>
+                    <li>WASD or arrow keys to move the snake.</li>
+                    <li>Press P to pause the game.</li>
+                    <li>Collect as many pieces of food to reach a high score.</li>
+                    <li>Avoid hitting your own tail or the edges of the playing area.</li>
+                </ul>
+            </div>
+        </div>
+
+    <div id="menuDiv">
+        <h1>🐍 Snake 🐍</h1>
+        <button id="playBtn" class="menuBtn">Play</button><br>
+        <button id="instructionsBtn" class="menuBtn">Instructions</button><br>
+        <button id="speedBtn" class="menuBtn">Select Speed</button><br>
+        <button id="clearBtn" class="menuBtn">Clear High Score</button>
+        <span id="clearSpn"></span>
+    </div>
+
+    
+
+    <script src="assets/scripts/menu.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['DotGothic16']
+            }
+        });
+    </script>
+</body>
+</html>

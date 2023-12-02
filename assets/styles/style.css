@@ -1,0 +1,152 @@
+
+html {
+  min-height: 100%;
+}
+
+html,body{
+  margin: 0;
+  padding: 0;
+}
+
+#gameContainer{
+    text-align: center;
+    display: block;
+    margin-top: 100px;
+}
+
+#gameBoard{
+    border: 3px solid;
+    border-radius: 5px;
+}
+
+#scoreText{
+    font-family: "DotGothic16",cursive;
+    font-size: 100px;
+}
+
+#gameOverModal{
+    margin:auto;
+    justify-content: center;
+}
+
+#gameOverModal #highScoreSpn,#scoreSpn,#pauseGameSpn{
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    font-family: "DotGothic16",cursive;
+}
+
+#scoreSpn,#scoreText,#pauseGameSpn{
+  color: #39FF14; 
+}
+
+
+body {
+  background: linear-gradient(to top, #222222 ,#333333, #444444,#555555,#666666); 
+}
+
+h1,h2,#clearSpn,#gameOverSpn{
+  text-shadow: #29c20f 1px 1px;
+  color: #39FF14; 
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'DotGothic16';
+}
+
+h1{
+    font-size: 4em;
+    text-shadow: 2px 2px 5px #29c20f;
+}
+
+h2,#gameOverSpn{
+    font-size: 2em;
+}
+
+#clearSpn{
+    font-size: 1em;
+    display: block;
+}
+
+ul{
+    text-align: left;
+    font-family: 'DotGothic16';
+    color: #39FF14; 
+    font-size: 20px;
+    list-style-type: square;
+}
+
+
+.menuBtn, .speedBtn, .speedOption,.mainMenuBtn,.restartGameBtn,#resetBtn,#pauseBtn,#resumeBtn{
+  display: block;
+  width: 200px;
+  margin: 10px auto;
+  padding: 15px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  background-color: green; 
+  color: #39FF14; 
+  text-shadow: #29c20f 1px 1px;
+  box-shadow: #145209 2px 4px;
+  font-size: 1.2em;
+  font-family: 'DotGothic16',"press Start 2P";
+  cursor: pointer;
+}
+
+#pauseBtn{
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 40px;
+}
+
+.menuBtn:hover, .speedBtn:hover, .speedOption:hover, .gameOverBtn:hover,.mainMenuBtn:hover,.restartGameBtn:hover,#resumeBtn:hover,#pauseBtn:hover,#resetBtn:hover{
+  background-color: darkgreen; 
+}
+
+#menuDiv{
+  width: 60%;
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+  .modal{
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    height:100%;
+    width:100%;
+    z-index: 1;
+    text-align: center;
+    background-color: rgba(0,0,0,0.4);
+}  
+
+.modalContent {
+    background: linear-gradient(to top, #333333, #444444,#555555,#666666); 
+    border: gray 4px solid;
+    border-style:groove;
+    border-radius: 10px;
+    margin: 6% auto;
+    margin-top: 300px;
+    padding: 20px;
+    width: 30%;
+  }
+
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: rgb(68, 68, 68);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  

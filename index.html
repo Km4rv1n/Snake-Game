@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body>
+    <div id="gameOverModal" class="modal" hidden> 
+        <div class="modalContent" >
+        <span id="gameOverSpn">Game Over!</span>
+        <span id="highScoreSpn"></span>
+        <span id="scoreSpn"></span>
+        <button id="gameOverMenuBtn" class="mainMenuBtn">Main Menu</button>
+        <button id="gameOverRestartBtn" class="restartGameBtn">Restart game</button>
+         </div> 
+    </div>
+
+    <div id="pauseGameModal" class="modal" hidden> 
+        <div class="modalContent" >
+        <span id="pauseGameSpn">Game Paused</span>
+        <button id="pauseMainMenuBtn" class="mainMenuBtn">Main Menu</button>
+        <button id="pauseRestartBtn" class="restartGameBtn">Restart Game</button>
+        <button id="resumeBtn">Resume Game</button>
+         </div> 
+    </div>
+
+    <div id="gameContainer">
+        <button id="pauseBtn">Pause</button>
+        <canvas id="gameBoard" width="500" height="500"></canvas>
+        <div id="scoreText">0</div>
+        <button id="resetBtn">Start</button>
+
+        
+    </div>
+
+    <script src="assets/scripts/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['DotGothic16']
+            }
+        });
+    </script>
+</body>
+</html>
